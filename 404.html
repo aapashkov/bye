@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BYE | Build Your Economy</title>
+  </head>
+  <body>
+    <script>
+      (function () {
+        var l = window.location;
+        var path = l.pathname.replace(/^\/bye\/?/, '');
+        var query = l.search ? l.search.replace(/&/g, '~and~') : '';
+        var redirect = '/bye/?/' + path + query + l.hash;
+        l.replace(redirect);
+      })();
+    </script>
+  </body>
+</html>
